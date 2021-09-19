@@ -15,7 +15,7 @@ const loaderSchema = new mongoose.Schema({
 const Loader = mongoose.model("vanillaloader", loaderSchema);
 
 app.get("/", async (req, res) => {
-  const allLoaders = await Loader.find({});
+  const allLoaders = await Loader.create({ html: "test", css: "test" });
   res.json(allLoaders);
 });
 
