@@ -1,0 +1,26 @@
+require("dotenv").config();
+const mongoose = require("mongoose");
+const express = require("express");
+const { response } = require("express");
+const app = express();
+mongoose.connect(
+  `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+);
+
+console.log(process.env.DB_PASSWORD);
+
+const loaderSchema = new mongoose.Schema({
+  html: String,
+  css: String,
+});
+
+const Loader = mongoose.model("vanillaloader", loaderSchema);
+
+app.get("/", async (req, res) => {
+  const allLoaders = await Loader.find({});
+  res.json(allLoaders);
+});
+
+app.listen(3000, function () {
+  console.log("listening on port 3000");
+});
