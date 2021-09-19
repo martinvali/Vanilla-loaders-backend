@@ -7,8 +7,6 @@ mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
 
-console.log(process.env.DB_PASSWORD);
-
 const loaderSchema = new mongoose.Schema({
   html: String,
   css: String,
@@ -21,6 +19,6 @@ app.get("/", async (req, res) => {
   res.json(allLoaders);
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 8888, function () {
   console.log("listening on port 3000");
 });
