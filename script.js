@@ -1,8 +1,10 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const express = require("express");
-const { response } = require("express");
+const cors = require("cors");
 const app = express();
+
+app.use(cors({ origin: "https://vanilla-loaders.netlify.app/" }));
 mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
