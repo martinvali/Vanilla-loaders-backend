@@ -4,21 +4,11 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-//app.use(cors({ origin: "https://vanilla-loaders.netlify.app/" }));
+app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
 mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
 
-const corsSettings = function () {
-  res.header(
-    "Access-Control-Allow-Origin",
-    "https://vanilla-loaders.netlify.app/"
-  );
-  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
-  next();
-};
-
-app.use(corsSettings);
 const loaderSchema = new mongoose.Schema({
   html: String,
   css: String,
