@@ -21,6 +21,12 @@ app.get("/", async (req, res) => {
   res.json(allLoaders);
 });
 
+app.get("loaders/:id", async function (req, res) {
+  const { id } = req.params;
+  const loader = await Loader.find({ id });
+  res.redirect("delfi.ee");
+});
+
 app.listen(process.env.PORT || 8888, function () {
   console.log("listening on port 3000");
 });
