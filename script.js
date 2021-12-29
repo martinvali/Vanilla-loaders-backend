@@ -26,7 +26,8 @@ app.get("/", async (req, res) => {
 app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
   const loader = await Loader.find({ id });
-  res.render("index", { loader }, function (err, html) {});
+  console.log(loader);
+  res.render("index", { loader });
 });
 
 app.listen(process.env.PORT || 8888, function () {
