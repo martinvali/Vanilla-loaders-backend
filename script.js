@@ -25,7 +25,7 @@ app.get("/", async (req, res) => {
 
 app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
-  const loader = await Loader.findById({ id: mongoose.Types.ObjectId(id) });
+  const loader = await Loader.findById({ id: mongoose.Types.ObjectID(id) });
   console.log(loader);
   res.render("index", { loader });
 });
