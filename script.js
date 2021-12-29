@@ -4,7 +4,10 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
+app.set("views", "./views");
+app
+  .set("view engine", "ejs")
+  .app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
 mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
@@ -24,7 +27,7 @@ app.get("/", async (req, res) => {
 app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
   const loader = await Loader.find({ id });
-  res.redirect("delfi.ee");
+  res.render("index", { loader }, function (err, html) {});
 });
 
 app.listen(process.env.PORT || 8888, function () {
