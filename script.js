@@ -5,9 +5,8 @@ const cors = require("cors");
 const app = express();
 
 app.set("views", "./views");
-app
-  .set("view engine", "ejs")
-  .app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
+app.set("view engine", "ejs");
+app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
 mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
