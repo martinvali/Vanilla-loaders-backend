@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const nl2br = require("nl2br");
 
 app.set("views", "./views");
 app.set("view engine", "ejs");
@@ -26,7 +27,7 @@ app.get("/", async (req, res) => {
 app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
   const loader = await Loader.findById({ _id: id });
-  res.render("index", { loader });
+  res.render("index", { html: nl2br(loader.html), css: nl2br(loader.css) });
 });
 
 app.listen(process.env.PORT || 8888, function () {
