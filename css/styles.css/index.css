@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: red;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  --color-primary: #4263eb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #edf2ff;
+}
+
+a {
+  text-decoration: none;
+}
