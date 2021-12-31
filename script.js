@@ -3,11 +3,12 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
 const app = express();
-
+const fs = require("fs");
+const path = require("path");
 app.set("views", "./views");
 app.set("view engine", "ejs");
 app.use(cors({ origin: "https://vanilla-loaders.netlify.app" }));
-app.use(express.static());
+app.use(express.static(path.join(__dirname, "static")));
 mongoose.connect(
   `mongodb+srv://martinv:${process.env.DB_PASSWORD}@cluster0.qdaga.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 );
