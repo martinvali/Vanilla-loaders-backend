@@ -111,3 +111,15 @@ a {
     font-size: 2.765rem;
   }
 }
+@media only screen and (min-width: 50em) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-container .preview {
+    grid-column: 1/2;
+  }
+  .grid-container .html,
+.grid-container .css {
+    grid-column: 2/3;
+  }
+}
