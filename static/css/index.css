@@ -75,6 +75,9 @@ a {
 }
 .white-background.preview {
   overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pre-element {
   width: 100%;

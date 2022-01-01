@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body>
+  <body data-barba="wrapper">
     <header class="header max-width-container outer-container">
       <a class="btn-back" href="https://vanilla-loaders.netlify.app">
         <img src="/img/back.svg" alt="Backarrow" />
@@ -22,7 +22,10 @@
       <a class="instructions" href="#">Instructions</a>
     </header>
 
-    <main class="main max-width-container outer-container">
+    <main
+      class="main max-width-container outer-container"
+      data-barba="container"
+    >
       <div class="grid-container">
         <div class="white-background preview"><%- loader.html %></div>
         <div class="white-background html">
