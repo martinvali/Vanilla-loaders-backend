@@ -117,6 +117,7 @@ a {
   }
   .grid-container .preview {
     grid-column: 1/2;
+    margin-right: 2.4rem;
   }
   .grid-container .html,
 .grid-container .css {
