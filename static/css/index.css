@@ -76,10 +76,6 @@ a {
 }
 .white-background.preview {
   overflow-y: hidden;
-  width: 100%;
-  padding-top: 50%;
-  padding-bottom: 50%;
-  height: 0;
 }
 .pre-element {
   width: 100%;
