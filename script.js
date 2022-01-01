@@ -29,7 +29,7 @@ app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
   const loader = await Loader.findById({ _id: id });
 
-  fs.writeFileSync("./static/css/index.css", loader.css, { flax: "a" });
+  fs.appendFileSync("./static/css/index.css", loader.css, { flax: "a" });
   res.render("index", { loader });
 });
 
