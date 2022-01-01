@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #212529;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  --color-primary: #4263eb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #edf2ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.max-width-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
+  color: #212529;
 }
 
 *:focus {
@@ -12,13 +12,80 @@
 html {
   font-size: 62.5%;
   --color-primary: #4263eb;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: #edf2ff;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+.max-width-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.outer-container {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.color-main {
+  color: var(--color-primary);
+}
+
+.header {
+  padding-top: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 auto;
+  font-size: 2.304rem;
+  font-weight: 600;
+}
+
+.btn-back {
+  display: inline-block;
+  height: 100%;
+}
+
+.main {
+  padding-top: 2.4rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.white-background {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  padding: 2.4rem;
+  margin-bottom: 2.4rem;
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+.pre-element {
+  width: 100%;
+}
+.pre-element code {
+  font-size: 1.6rem;
+}
+
+.instructions {
+  color: #f3f6fd;
+  background-color: var(--color-primary);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
 }
