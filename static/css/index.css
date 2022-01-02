@@ -117,7 +117,7 @@ a {
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
-  .grid-container .html {
+  .grid-container .css {
     grid-column: 1/2;
     margin-right: 2.4rem;
   }
