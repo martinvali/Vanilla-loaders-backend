@@ -28,8 +28,8 @@ app.get("/", async (req, res) => {
 app.get("/loaders/:id", async function (req, res) {
   const { id } = req.params;
   const loader = await Loader.findById({ _id: id });
-  console.log(loader.css);
-  fs.appendFileSync("./static/css/index.css", loader.css, { flag: "a" });
+  fs.copyFile("./static/css/index.css", "./static/css/loaderServed.css");
+  fs.appendFileSync("./static/css/loaderServed.css", loader.css, { flag: "a" });
   res.render("index", { loader });
 });
 
