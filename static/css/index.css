@@ -68,10 +68,10 @@ a {
 .white-background {
   background-color: white;
   border-radius: 8px;
-  padding: 2.4rem;
+  padding: 2.4rem 1.2rem;
   margin-bottom: 2.4rem;
   overflow-y: scroll;
-  max-height: 250px;
+  max-height: 500px;
 }
 .white-background.preview {
   overflow-y: hidden;
@@ -119,7 +119,7 @@ a {
   }
   .grid-container .css {
     grid-column: 2/3;
-    margin-right: 2.4rem;
+    margin-left: 2.4rem;
     grid-row: 1/3;
   }
   .grid-container .html,
@@ -129,5 +129,6 @@ a {
   .grid-container .html {
     display: flex;
     align-items: center;
+    align-self: flex-start;
   }
 }
