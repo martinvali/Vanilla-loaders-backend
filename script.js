@@ -16,6 +16,7 @@ mongoose.connect(
 const loaderSchema = new mongoose.Schema({
   html: String,
   css: String,
+  type: String,
 });
 
 const Loader = mongoose.model("vanillaloader", loaderSchema);
@@ -35,7 +36,8 @@ app.get("/loaders/:id", async function (req, res) {
 
 app.get("/loaders", async function (req, res) {
   const type = req.query.type;
-  console.log(type);
+  const loaders = await Loader.find({ type });
+  res.json(loaders);
 });
 
 app.listen(process.env.PORT || 8888, function () {
