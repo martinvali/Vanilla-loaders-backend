@@ -26,25 +26,52 @@
       <div class="grid-container">
         <div class="white-background">
           <pre class="pre-element"><code>fds
-            fdsdsffd
-            dfsfdd
-            dfsdfs
-            h
-            gf
-            fg
-            f
-            fg
-            df
-            df
-            svg
-            q
-            q
-            q
-            gq
-
-            q
-            qq
-            f
+            body {
+              font-family: poppins;
+            }
+            .loading-text-9 {
+              color: #fff; /* Set a suitable text color */
+              font-weight: 600;
+              font-size: 32px;
+              display: inline-block;
+              position: relative;
+            }
+      
+            .loading-text-9::before {
+              content: "LOADING..."; /* Change content to the text of your h1 */
+              color: #5c7cfa; /* Color of the text */
+              display: inline-block;
+              position: absolute;
+              height: 100%;
+              width: 0%;
+              left: 0;
+              overflow: hidden;
+              border-right: 2px solid #5c7cfa;
+              animation: loading-animation 5s infinite,
+                cursor-blinking 0.8s steps(2) infinite; /* Set a suitable time instead of the 5s */
+            }
+      
+            @keyframes cursor-blinking {
+              from {
+                border-color: white;
+              }
+      
+              to {
+                border-color: #5c7cfa;
+              }
+            }
+            @keyframes loading-animation {
+              0% {
+                width: 0%;
+              }
+      
+              50% {
+                width: 100%;
+              }
+              100% {
+                width: 0%;
+              }
+            }  
 <q></q>
 <q></q>
             s

@@ -33,6 +33,11 @@ app.get("/loaders/:id", async function (req, res) {
   res.render("index", { loader });
 });
 
+app.get("/loaders", async function (req, res) {
+  const type = req.query.type;
+  console.log(type);
+});
+
 app.listen(process.env.PORT || 8888, function () {
   console.log("listening on port 3000");
 });
