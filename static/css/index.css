@@ -97,18 +97,19 @@ a {
   width: 8px;
   margin-bottom: 50px;
   height: 8px;
+  border-radius: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 5px;
+  background: white;
+  border-radius: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #6882ef;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background 0.2s linear;
 }
 
