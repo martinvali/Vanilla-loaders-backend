@@ -117,12 +117,12 @@ a {
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
-  .grid-container .preview {
+  .grid-container .html {
     grid-column: 1/2;
     margin-right: 2.4rem;
   }
   .grid-container .html,
-.grid-container .css {
+.grid-container .preview {
     grid-column: 2/3;
   }
 }
