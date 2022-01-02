@@ -32,7 +32,7 @@ app.get("/loaders/:id", async function (req, res) {
     "./static/css/index.css",
     "./static/css/loaderServed.css",
     function (err) {
-      throw new Error(err);
+      console.log(err);
     }
   );
   fs.appendFileSync("./static/css/loaderServed.css", loader.css, { flag: "a" });
