@@ -60,10 +60,6 @@ a {
   height: 100%;
 }
 
-.main {
-  padding-top: 2.4rem;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
