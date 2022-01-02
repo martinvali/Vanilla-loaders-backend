@@ -78,7 +78,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  height: 350px;
 }
+.white-background.css {
+  padding-top: 4.8rem;
+}
+
 .pre-element {
   width: 100%;
 }
