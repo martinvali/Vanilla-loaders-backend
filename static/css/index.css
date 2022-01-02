@@ -94,21 +94,21 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  margin-bottom: 50px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #6882ef;
   border-radius: 5px;
-  height: 20%;
   transition: background 0.2s linear;
-  margin-bottom: 200px;
 }
 
 /* Handle on hover */
