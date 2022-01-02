@@ -82,7 +82,7 @@ a {
   height: 350px;
 }
 .white-background.css {
-  padding-top: 4.8rem;
+  padding-top: 2.4rem;
 }
 
 .pre-element {
@@ -127,6 +127,8 @@ a {
     grid-column: 2/3;
     margin-left: 2.4rem;
     grid-row: 1/3;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
   }
   .grid-container .html,
 .grid-container .preview {
@@ -136,5 +138,7 @@ a {
     display: flex;
     align-items: center;
     align-self: flex-start;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
   }
 }
