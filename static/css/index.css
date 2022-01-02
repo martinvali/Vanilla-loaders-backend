@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.main {
+  padding-top: 8rem;
+}
+
 .max-width-container {
   max-width: 1300px;
   margin: 0 auto;
