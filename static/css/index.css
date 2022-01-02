@@ -92,6 +92,30 @@ a {
   font-size: 1.6rem;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6882ef;
+  border-radius: 5px;
+  height: 20%;
+  transition: background 0.2s linear;
+  margin-bottom: 200px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8ea1f3;
+}
+
 .instructions {
   color: #f3f6fd;
   background-color: var(--color-primary);
