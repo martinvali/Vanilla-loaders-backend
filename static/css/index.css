@@ -126,6 +126,12 @@ a {
   border-radius: 8px;
 }
 
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
 @media only screen and (min-width: 40.625em) {
   .outer-container {
     padding-left: 4rem;
@@ -134,6 +140,10 @@ a {
 
   .header {
     padding-top: 3.2rem;
+  }
+
+  .subheading {
+    font-size: 1.92rem;
   }
 
   .instructions {
