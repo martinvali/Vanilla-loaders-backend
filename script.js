@@ -35,7 +35,11 @@ app.get("/loaders/:id", async function (req, res) {
 });
 
 app.get("/loaders", async function (req, res) {
-  const type = req.query.type;
+  let type = req.query.type;
+  if (type === "all") {
+    const loaders = await Loader.find({});
+    return res.json(loaders);
+  }
   const loaders = await Loader.find({ type });
   res.json(loaders);
 });
