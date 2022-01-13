@@ -59,6 +59,9 @@ a {
   display: inline-block;
   height: 100%;
 }
+.btn-back:hover img {
+  transform: scale(1.05);
+}
 
 .grid-container {
   display: grid;
@@ -175,5 +178,9 @@ a {
   .grid-container .html {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+  }
+
+  .logo {
+    font-size: 3.318rem;
   }
 }
