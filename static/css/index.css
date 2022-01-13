@@ -58,6 +58,7 @@ a {
 .btn-back {
   display: inline-block;
   height: 100%;
+  transition: all 0.2s;
 }
 .btn-back:hover img {
   transform: scale(1.05);
@@ -127,6 +128,10 @@ a {
   padding: 0.6rem 1.2rem;
   font-size: 1.6rem;
   border-radius: 8px;
+  transition: background-color 0.2s;
+}
+.instructions:hover {
+  background-color: #5c7cfa;
 }
 
 .subheading {
