@@ -63,6 +63,9 @@ a {
 .btn-back:hover img {
   transform: scale(1.05);
 }
+.btn-back img {
+  width: 32px;
+}
 
 .grid-container {
   display: grid;
