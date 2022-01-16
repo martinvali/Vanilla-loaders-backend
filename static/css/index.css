@@ -64,7 +64,7 @@ a {
   transform: scale(1.05);
 }
 .btn-back img {
-  width: 32px;
+  width: 24px;
 }
 
 .grid-container {
@@ -149,6 +149,10 @@ a {
 
   .logo {
     font-size: 2.765rem;
+  }
+
+  .btn-back img {
+    width: 32px;
   }
 }
 @media only screen and (min-width: 62.5em) {
