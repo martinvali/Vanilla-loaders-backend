@@ -53,6 +53,7 @@ a {
   margin: 0 auto;
   font-size: 2.304rem;
   font-weight: 600;
+  transform: translateX(-12px);
 }
 
 .btn-back {
@@ -87,6 +88,10 @@ a {
   align-items: center;
   overflow-x: hidden;
   height: 350px;
+}
+.white-background.html {
+  max-height: 100%;
+  padding-top: 2.4rem;
 }
 .white-background.css {
   padding-top: 2.4rem;
@@ -149,6 +154,7 @@ a {
 
   .logo {
     font-size: 2.765rem;
+    transform: translateX(-16px);
   }
 
   .btn-back img {
