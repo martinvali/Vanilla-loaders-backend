@@ -125,18 +125,6 @@ a {
   background: #8ea1f3;
 }
 
-.instructions {
-  color: #f3f6fd;
-  background-color: var(--color-primary);
-  padding: 0.6rem 1.2rem;
-  font-size: 1.6rem;
-  border-radius: 8px;
-  transition: background-color 0.2s;
-}
-.instructions:hover {
-  background-color: #5c7cfa;
-}
-
 .subheading {
   font-size: 1.6rem;
   font-weight: 600;
@@ -157,11 +145,6 @@ a {
 
   .subheading {
     font-size: 1.92rem;
-  }
-
-  .instructions {
-    font-size: 1.92rem;
-    padding: 1rem 2rem;
   }
 
   .logo {
