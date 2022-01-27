@@ -184,4 +184,9 @@ a {
   .logo {
     font-size: 3.318rem;
   }
+
+  .white-background {
+    margin-bottom: 0;
+    max-height: auto;
+  }
 }
