@@ -185,7 +185,7 @@ a {
     font-size: 3.318rem;
   }
 
-  .white-background {
+  .white-background.css {
     margin-bottom: 0;
     max-height: auto;
   }
