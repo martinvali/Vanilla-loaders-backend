@@ -164,8 +164,8 @@ a {
 @media only screen and (min-width: 62.5em) {
   .grid-container {
     grid-template-columns: 0.75fr 1fr;
-    grid-template-rows: 350px 1fr;
-    max-height: 650px;
+    grid-template-rows: 1fr auto;
+    max-height: 675px;
   }
   .grid-container .css {
     grid-column: 2/3;
@@ -184,6 +184,11 @@ a {
   .grid-container .html {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+  }
+
+  .white-background.preview {
+    height: auto;
+    align-self: stretch;
   }
 
   .logo {
